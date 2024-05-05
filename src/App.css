@@ -1,9 +1,10 @@
 body{
   overflow-x: hidden;
+  font-size: 20px;
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 .title{
-  background: linear-gradient(to right, #ffa734, #ff8d46);
+  background-color: white;
   -webkit-background-clip: text; /* For Safari */
   background-clip: text;
   color: transparent;
@@ -16,76 +17,103 @@ body{
 .pb{
   padding-bottom: 20px;
 }
-.btn{
-  color: white;
-  cursor: pointer;
-  background-image: linear-gradient(to right, #fca22b, #f5670e);
-  padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: 6px solid rgb(157, 110, 69);
-  z-index: 2;
-  position: relative;
-  transition-duration: 0.5s;
-  box-shadow: rgba(255, 123, 0, 0.459) 0px 10px 30px;
+.left-border{
+  border-left: 5px solid rgba(255, 255, 255, 0.418);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
 }
-.btn:hover{
-  color: white;
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px  solid rgb(255, 255, 255);
   cursor: pointer;
-  background-image: linear-gradient(to right, #fca22b, #f5670e);
+  color: white;
   padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: 6px solid rgb(157, 110, 69);
-  z-index: 2;
-  position: relative;
-  transition-duration: 0.5s;
-  box-shadow: rgba(255, 123, 0, 0.459) 0px 20px 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgba(255, 255, 255, 0.381); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  border-radius: 40px;
+  transition-duration: 1s;
+  box-shadow: rgba(17, 17, 26, 0.068) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
+.btn:hover{
+  background-color: rgba(255, 255, 255, 0); /* Semi-transparent white */
+
+}
+.header-btn{
+  border: 1px  solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+  color: white;
+  padding: 15px;
+  background-color: #ae62c6; /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  border-radius: 10px;
+  transition-duration: 1s;
+  box-shadow: rgba(17, 17, 26, 0.068) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.header-btn:hover{
+  border: 1px  solid #ae62c6;
+  cursor: pointer;
+  color: #ae62c6;
+  padding: 15px;
+  background-color: #af62c600; /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  border-radius: 10px;
+  transition-duration: 1s;
+  box-shadow: rgba(17, 17, 26, 0.068) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
 .App {
   text-align: center;
   color: white;
-  background-image: linear-gradient(to bottom left, #81511d, #2b251d,#81511d, #2b251d);
+  /* background-image: linear-gradient(to bottom left, #01071f, #27285e,#01071f, #27285e); */
+}
+.bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #000412, #27285e);
 }
 .header-container{
   padding-top: 30px; 
 }
-.header-parent_before{
-  margin: auto;
-  left: 25%;
-  display: flex;
-  gap: 70px;
-  width: 50%;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  border-radius: 40px;
-  transition-duration: 1s;
-}
+
 .header-parent{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: fixed;
-  left: 30%;
+  left: 35%;
   display: flex;
   gap: 70px;
-  width: 40%;
+  width: 30%;
   margin: auto;
   align-items: center;
-  border: 1px  solid rgb(255, 255, 255);
+  border: 0.5px solid #ffffff49;
   justify-content: center;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.5); 
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.204); 
   backdrop-filter: blur(7px); /* Apply blur effect */
   z-index: 3;
-  border-radius: 40px;
+  border-radius: 10px;
   transition-duration: 1s;
-  animation: slideDown 0.5s forwards; /* Animation name and duration */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.people-img{
+  z-index: 2;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 .slideUp{
   animation: slideUp 0.5s forwards; /* Animation name and duration */
-
+}
+.slideDown{
+  animation: slideDown 0.5s forwards; /* Animation name and duration */
 }
 .memu-container{
   align-items: center;
@@ -114,17 +142,21 @@ body{
   align-items: center;
 }
 .home-img{
+  top: 150px;
   z-index: 2;
-  width: 400px;
+  width: 500px;
   position: absolute;
   right: 5000px;
   animation-delay: 0.5s;
-  animation: leftAnimation 1s forwards; /* Apply animation */
+  border-radius: 30px;
+  animation: leftAnimation 2s forwards; /* Apply animation */
 }
 .home-board{
-  
+  background-image: linear-gradient(to right, #3b2a57db, #232f6b7f);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border: 0.5px solid #5b5ebf89;
   position: relative;
-  border: 1px solid rgb(255, 145, 0);
+  /* border: 1px solid rgb(255, 255, 255); */
   width: 200px;
   padding: 30px;
   padding-top: 60px;
@@ -133,8 +165,31 @@ body{
   /* animation: clipAnimation infinite 1s linear; */
 
 }
+.card{
+  position: relative;
+  padding: 30px;
+  padding-top: 100px;
+  background-image: linear-gradient(to right, #3b2a57db, #232f6b7f);
+  border-radius: 20px;
+  border: 0.5px solid #5b5ebf80;
+
+}
+.team-header{
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.133);
+}
+.image{
+  border-radius: 20px;
+  border: 0.5px solid #5b5ebf;
+}
 .home-svg{
-  background-image: linear-gradient(to right, #fca22b, #f5670e);
+  background-image: linear-gradient(to right, #ae62c6, #6c37ab);
   padding: 20px;
   border-radius: 50%;
   color: white;
@@ -142,11 +197,12 @@ body{
   position: absolute;
   top: -40px;
   left: 90px;
+
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 .services-container{
   text-align: left;
-  border: 1px solid rgb(255, 145, 0);
+  border: 1px solid rgb(255, 255, 255);
   padding: 30px;
   border-radius: 20px;
   position: relative;
@@ -160,7 +216,7 @@ body{
 
 }
 .services-svg{
-  background-image: linear-gradient(to right, #fca22b, #f5670e);
+  background-image: linear-gradient(to right, #ae62c6, #6c37ab);
   padding: 20px;
   border-radius: 50%;
   color: white;
@@ -176,14 +232,14 @@ body{
   padding-top: 70px;
   width: 60%;
   margin: auto;
-  border-left: 3px solid rgb(255, 145, 0);
+  border-left: 3px solid rgb(255, 255, 255);
 }
 .blog{
   position: relative;
   margin-bottom: 20px;
 }
 .blog-start{
-  background-color: rgb(255, 145, 0);
+  background-color: rgb(255, 255, 255);
   width: 20px;
   height: 20px;
   position: absolute;
@@ -193,7 +249,7 @@ body{
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 .blog-end{
-  background-color: rgb(255, 145, 0);
+  background-color: rgb(255, 255, 255);
   width: 16px;
   height: 16px;
   position: absolute;
@@ -276,15 +332,15 @@ body{
   background-color: transparent;
   border: none;
   color: white;
-  border-bottom: 1px  solid rgb(255, 145, 0);
+  border-bottom: 1px  solid rgb(255, 255, 255);
   height: 30px;
 }
 .footer{
   backdrop-filter: blur(10px); /* Apply blur effect */
-  box-shadow: rgb(255, 145, 0) 0px 30px 60px;
+  box-shadow: rgb(255, 255, 255) 0px 30px 60px;
   margin-top: 100px;
   padding: 30px;
-  border-top: 1px  solid rgb(255, 145, 0);
+  border-top: 1px  solid rgb(255, 255, 255);
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -305,7 +361,7 @@ body{
   bottom: 50px;
   background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
   backdrop-filter: blur(10px); /* Apply blur effect */
-  border-radius: 40px;
+  border-radius: 50%;
   transition-duration: 1s;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
@@ -335,6 +391,9 @@ body{
   left: -5000px;
   position: absolute;
   animation: rightAnimation 1.5s forwards; /* Apply animation */
+}
+.justify-start{
+  justify-content: flex-start;
 }
 @keyframes rightAnimation {
   0% {
@@ -378,7 +437,14 @@ body{
   }
   to {
     top: -100px; /* Start position */
-
+  }
+}
+@keyframes slideDown {
+  from {
+    top: -100px; /* Start position */
+  }
+  to {
+    top: 30px; /* End position */
   }
 }
 @keyframes clipAnimation {
@@ -432,6 +498,13 @@ body{
   margin-top: 100px;
   padding: 100px;
   font-size: 40px;
+}
+.video{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    margin: auto;
 }
 @keyframes borderAnimation_2 {
   0% {
@@ -505,13 +578,46 @@ body{
  animation-fill-mode: both;
   backface-visibility: hidden;
 }
+.appear-title.in-view {  
+  animation: titleAnimation;
+   animation-duration: 1s;
+  animation-delay: 0s;
+ animation-fill-mode: both;
+  backface-visibility: hidden;
+}
+.btn-animation{
+  animation: ArrowAnimation;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+}
+.btn-arrow{
+  display: flex;
+  align-items: center;
+  
+}
 .appear{  
+  transform: translate3d(0,100px, 0);
+  opacity: 0;
+}
+.appear-title{  
   transform: translate3d(0,100px, 0);
   opacity: 0;
 }
 @keyframes fadeInLeftBig {
   from { opacity: 0; transform: translate3d(0,100px, 0); }
-  to { opacity: 1; transform: none; } }
+  to { opacity: 1; transform: none; }
+}
+@keyframes titleAnimation {
+  0% { opacity: 0;font-size: 0px; transform: translate3d(0,100px, 0); }
+  50% { opacity: 0.5;font-size: 100px; transform: translate3d(0,100px, 0); }
+  100% { opacity: 1; font-size: 50px;transform: none; }
+}
+@keyframes ArrowAnimation {
+  from { opacity: 0; transform: translate3d(-100px,0,0); }
+  to { opacity: 1; transform: none; }
+}
 .fadeInLeftBig { animation-name: fadeInLeftBig; }
 
 .spin {
@@ -557,6 +663,60 @@ body{
       transform 0.4s linear 0s,
       border-left-width 0s linear 0.35s;
   }
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
 }
 
 

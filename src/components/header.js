@@ -5,7 +5,7 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY || document.documentElement.scrollTop;
-            if (scrollY > 300) {
+            if (scrollY > 100) {
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
@@ -20,13 +20,14 @@ const Header = () => {
 
     return (
         <div className="header-container">
-            <div className={isScrolled ? "header-parent" : 'header-parent_before slideUp'}>
-                <div className="logo">Cognosys </div>
+            <div className={isScrolled ? "header-parent slideDown" : 'header-parent '}>
+                <div className="logo">Peer </div>
                 <div className="memu-container">
                     <MenuItem title={'HOME'} active />
                     <MenuItem title={'SERVICES'} />
-                    <MenuItem title={'BLOG'} />
-                    <MenuItem title={'CONTACT US'} />
+                    <MenuItem title={'$PEER'} />
+                    <MenuItem title={'TEAM'} />
+                    <button className="header-btn">FOLLOW US</button>
                 </div>
             </div>
 

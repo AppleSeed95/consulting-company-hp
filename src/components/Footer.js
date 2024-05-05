@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
-        <div className="footer">
-            Some footer info here.
+        <div    >
+            {/* Some footer info here. */}
         </div>
     )
 }

@@ -1,76 +1,54 @@
 const Services = () => {
     return (
-        <div style={{ paddingTop: '250px' }}>
-            <div className="animation-element appear font-title section-title">Services That Get Results</div>
-            <div className="flex" style={{ paddingLeft: '200px', paddingRight: '200px', paddingBottom: '50px', gap: '100px' }}>
-                <div className="services-container animation-element appear">
-                    <div className="services-svg">
-                        <img src="/svg/product.svg" alt='product' />
-                    </div>
+        <div style={{ paddingTop: '300px' }}>
+            <div style={{ height: '250px' }}>
+                <div
+                    style={{ marginBottom: '100px' }}
+                    className="animation-element appear-title font-title section-title">Services That Get Results
+                </div>
+            </div>
+
+            <div className="flex" style={{ alignItems: 'flex-end', paddingLeft: '200px', paddingRight: '200px', paddingBottom: '50px', gap: '20px' }}>
+
+                <div className="card animation-element appear"
+                    style={{
+                        textAlign: 'left', width: '40%', height: '170px',
+                    }}
+                >
+                    <div className="team-header" />
+
                     <div className="services-title">
-                        Product Design
+                        GameHub
                     </div>
                     <div>
-                        Bring new software to the digital market by conceptualizing and prototyping innovative designs that meet your specific needs. From wire-framing to testing and refining, we guide you through the entire product development process to ensure a successful launch.
+                        it will be the environment where players and developers will be able to create and play their favorite games without intermediaries, as well as exchange playable non-fugible digital assets.
+                    </div>
+
+                </div>
+                <div className="card animation-element appear"
+                    style={{
+                        textAlign: 'left', width: '40%', height: '170px',
+                    }}
+                >
+                    <div className="team-header" />
+
+                    <div className="services-title">
+                        Game Studio & Incubator & Launcher
+                    </div>
+                    <div>
+                        to take advantage of our expertise, we will develop our own games and provide grants for partners to develop with us.
                     </div>
                 </div>
-                <div className="services-container animation-element appear">
-                    <div className="services-svg">
-                        <img src="/svg/product.svg" alt='product' />
-                    </div>
-                    <div className="services-title">
-                        Product Design
-                    </div>
-                    <div>
-                        Bring new software to the digital market by conceptualizing and prototyping innovative designs that meet your specific needs. From wire-framing to testing and refining, we guide you through the entire product development process to ensure a successful launch.
-                    </div>
-                </div>
-            </div >
-            <div className="flex" style={{ paddingLeft: '200px', paddingRight: '200px', paddingBottom: '50px', gap: '100px' }}>
-                <div className="services-container animation-element appear">
-                    <div className="services-svg">
-                        <img src="/svg/product.svg" alt='product' />
-                    </div>
-                    <div className="services-title">
-                        Product Design
+                <div className="card animation-element appear"
+                    style={{ textAlign: 'left', width: '40%', height: '170px' }}
+                >
+                    <div className="team-header" />
+
+                    <div className=" services-title">
+                        Social Network
                     </div>
                     <div>
-                        Bring new software to the digital market by conceptualizing and prototyping innovative designs that meet your specific needs. From wire-framing to testing and refining, we guide you through the entire product development process to ensure a successful launch.
-                    </div>
-                </div>
-                <div className="services-container animation-element appear">
-                    <div className="services-svg">
-                        <img src="/svg/product.svg" alt='product' />
-                    </div>
-                    <div className="services-title">
-                        Product Design
-                    </div>
-                    <div>
-                        Bring new software to the digital market by conceptualizing and prototyping innovative designs that meet your specific needs. From wire-framing to testing and refining, we guide you through the entire product development process to ensure a successful launch.
-                    </div>
-                </div>
-            </div >
-            <div className="flex" style={{ paddingLeft: '200px', paddingRight: '200px', paddingBottom: '50px', gap: '100px' }}>
-                <div className="services-container animation-element appear">
-                    <div className="services-svg">
-                        <img src="/svg/product.svg" alt='product' />
-                    </div>
-                    <div className="services-title">
-                        Product Design
-                    </div>
-                    <div>
-                        Bring new software to the digital market by conceptualizing and prototyping innovative designs that meet your specific needs. From wire-framing to testing and refining, we guide you through the entire product development process to ensure a successful launch.
-                    </div>
-                </div>
-                <div className="services-container animation-element appear">
-                    <div className="services-svg">
-                        <img src="/svg/product.svg" alt='product' />
-                    </div>
-                    <div className="services-title">
-                        Product Design
-                    </div>
-                    <div>
-                        Bring new software to the digital market by conceptualizing and prototyping innovative designs that meet your specific needs. From wire-framing to testing and refining, we guide you through the entire product development process to ensure a successful launch.
+                        users will be able to communicate and form a community privately and securely, through text, voice, and video messages.
                     </div>
                 </div>
             </div >
