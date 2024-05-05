@@ -25,10 +25,13 @@ const Home = () => {
                         Peerfuse GameHub
                     </div>
                     <div className="pb animate-right" style={{ fontSize: '20px', width: '500px', top: '250px', animationDelay: '0.6s' }}>
-                        TIME, ENERGY, AND TALENT CAN BE MORE IMPORTANT THAN BUDGET
+                        Online Gameing platform
                     </div>
                     <div className="pb animate-right" style={{ fontSize: '20px', width: '500px', top: '350px', animationDelay: '0.7s' }}>
-                        We are AI/ML focussed growth consulting company
+                        Our network is being built to
+                        meet the security,
+                        decentralization, and
+                        scalability needs of gaming
                     </div>
                     <Button className="flex pb justify-start animate-right" style={{ fontSize: '20px', top: '450px', animationDelay: '1s' }} title={'PRODUCTS'} />
                     <div className="pb " style={{ fontSize: '20px', width: '500px', top: '300px' }}>
