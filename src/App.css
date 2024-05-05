@@ -86,10 +86,10 @@ body{
 .header-parent{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: fixed;
-  left: 35%;
+  left: 30%;
   display: flex;
   gap: 70px;
-  width: 30%;
+  width: 40%;
   margin: auto;
   align-items: center;
   border: 0.5px solid #ffffff49;
