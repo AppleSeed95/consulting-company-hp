@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <div className="header-container">
             <div className={isScrolled ? "header-parent slideDown" : 'header-parent '}>
-                <div className="logo">Peer </div>
+                <div className="logo">Peerfuse </div>
                 <div className="memu-container">
                     <MenuItem title={'HOME'} active />
                     <MenuItem title={'SERVICES'} />

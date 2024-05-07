@@ -5,7 +5,7 @@ const Token = () => {
 
                 <div
                     style={{ marginBottom: '100px' }}
-                    className="animation-element appear-title font-title section-title">Universal Gameing Token
+                    className="animation-element appear-title font-title section-title">Universal Game Token
                 </div>
             </div>
             <div className="flex" style={{ paddingLeft: '200px', paddingRight: '200px', paddingBottom: '50px' }}>
@@ -21,7 +21,8 @@ const Token = () => {
                         $PEER
                     </div>
                     <div>
-                        Initially, 108 million tokens will be unlocked, out of a total of 648 million. After that,there will be a monthly issuance of only 3 million tokens.                    </div>
+                        Initially, 108 million tokens will be unlocked, out of a total of 648 million. After that,there will be a monthly issuance of only 9 million tokens.
+                    </div>
                 </div>
 
             </div >

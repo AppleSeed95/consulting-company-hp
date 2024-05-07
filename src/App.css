@@ -12,7 +12,7 @@ body{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .font-title{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 .pb{
   padding-bottom: 20px;
@@ -84,7 +84,7 @@ body{
 }
 
 .header-parent{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   position: fixed;
   left: 30%;
   display: flex;
@@ -124,8 +124,10 @@ body{
   z-index: 2;
 }
 .logo{
+  margin-top: 7px;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   font-size: 25px;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
   cursor: pointer;
 }
 .brand{
@@ -166,13 +168,14 @@ body{
 
 }
 .card{
+  cursor: pointer;
   position: relative;
   padding: 30px;
   padding-top: 100px;
   background-image: linear-gradient(to right, #3b2a57db, #232f6b7f);
   border-radius: 20px;
   border: 0.5px solid #5b5ebf80;
-
+  z-index: 2;
 }
 .team-header{
     position: absolute;
@@ -359,10 +362,11 @@ body{
   position: fixed;
   left: 20px;
   bottom: 50px;
-  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.332); /* Semi-transparent white */
   backdrop-filter: blur(10px); /* Apply blur effect */
   border-radius: 50%;
   transition-duration: 1s;
+  z-index: 3;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 .calendly-btn:hover{
@@ -587,7 +591,7 @@ body{
 }
 .btn-animation{
   animation: ArrowAnimation;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-delay: 0s;
   animation-fill-mode: both;
   backface-visibility: hidden;
@@ -719,5 +723,71 @@ canvas {
   border-radius: 0 0 3px 3px;
 }
 
+.game_bg{
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  top: 350px;
+  z-index: 1;
+  opacity: 0.05;
+}
 
+.footer-container{
+  /* background-image: linear-gradient(to left, #020224,#12001b,#020224); */
 
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; 
+  background-color: #01011a;
+  z-index: 1;
+  position: relative;
+  margin-top: 100px;
+  padding-top: 50px; 
+  display: flex;
+  padding: 40px;
+  padding-right: 400px;
+  padding-left: 400px;
+  justify-content: space-between;
+}
+@media (max-width: 1600px) {
+  .header-parent{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    position: fixed;
+    left: 15%;
+    display: flex;
+    gap: 70px;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    border: 0.5px solid #ffffff49;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.204); 
+    backdrop-filter: blur(7px); /* Apply blur effect */
+    z-index: 3;
+    border-radius: 10px;
+    transition-duration: 1s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+}
+
+/* Media query for screens with a minimum width of 1200px */
+@media (min-width: 1600px) {
+  .header-parent{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    position: fixed;
+    left: 30%;
+    display: flex;
+    gap: 70px;
+    width: 40%;
+    margin: auto;
+    align-items: center;
+    border: 0.5px solid #ffffff49;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.204); 
+    backdrop-filter: blur(7px); /* Apply blur effect */
+    z-index: 3;
+    border-radius: 10px;
+    transition-duration: 1s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+}
