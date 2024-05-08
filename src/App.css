@@ -591,7 +591,7 @@ body{
 }
 .btn-animation{
   animation: ArrowAnimation;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-delay: 0s;
   animation-fill-mode: both;
   backface-visibility: hidden;
@@ -619,7 +619,7 @@ body{
   100% { opacity: 1; font-size: 50px;transform: none; }
 }
 @keyframes ArrowAnimation {
-  from { opacity: 0; transform: translate3d(-100px,0,0); }
+  from { opacity: 0; transform: translate3d(-50px,0,0); }
   to { opacity: 1; transform: none; }
 }
 .fadeInLeftBig { animation-name: fadeInLeftBig; }
@@ -727,9 +727,10 @@ canvas {
   position: absolute;
   width: 100vw;
   left: 0;
-  top: 350px;
+  top: 100px;
   z-index: 1;
-  opacity: 0.05;
+  height: 100%;
+  opacity: 0.2;
 }
 
 .footer-container{

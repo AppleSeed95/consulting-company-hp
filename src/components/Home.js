@@ -22,7 +22,7 @@ const Home = () => {
             <div className="flex" style={{ gap: '800px', alignItems: 'flex-start', height: '650px' }}>
                 <div style={{ textAlign: 'left', zIndex: 1, position: 'relative' }}>
                     <div className="title pb animate-right" style={{ top: '150px', animationDelay: '0.5s' }}>
-                        Peerfuse GameHub
+                        Gaming Platform
                     </div>
                     <div className="pb animate-right" style={{ fontSize: '20px', width: '500px', top: '250px', animationDelay: '0.6s' }}>
                         Online Gameing platform

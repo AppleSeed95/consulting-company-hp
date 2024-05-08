@@ -1,7 +1,7 @@
 import GameCard from "./atoms/gameCard";
 const Services = () => {
     return (
-        <div style={{ paddingTop: '300px', position: 'relative', zIndex: 2 }}>
+        <div style={{ paddingTop: '300px', zIndex: 2 }}>
             <div style={{ height: '250px' }}>
                 <div
                     style={{ marginBottom: '100px' }}
@@ -9,7 +9,6 @@ const Services = () => {
                 </div>
 
             </div>
-            <img src="/img/game_bg.png" alt="" className="game_bg" />
             <div className="flex" style={{ alignItems: 'flex-end', paddingLeft: '200px', paddingRight: '200px', paddingBottom: '50px', gap: '20px' }}>
 
                 <div className="card animation-element appear"
@@ -55,8 +54,10 @@ const Services = () => {
                 </div>
 
             </div >
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '30px' }}>
-                <div style={{ width: '50%', padding: '100px', display: 'flex', justifyContent: 'flex-end' }}>
+            <div style={{ display: 'flex', zIndex: 2, position: 'relative', justifyContent: 'center', gap: '30px' }}>
+                <img src="/img/game_bg.png" alt="" className="game_bg" />
+
+                <div style={{ width: '50%', zIndex: 2, padding: '100px', display: 'flex', justifyContent: 'flex-end' }}>
                     <div>
                         <div
                             className="font-title section-title animation-element appear" style={{ paddingLeft: '0px' }}>
@@ -108,7 +109,7 @@ const Services = () => {
                     </div>
 
                 </div>
-                <div style={{ width: '50%', padding: '100px', display: 'flex', justifyContent: 'flex-start' }}>
+                <div style={{ width: '50%', zIndex: 2, padding: '100px', display: 'flex', justifyContent: 'flex-start' }}>
                     <div>
                         <div
                             className="font-title section-title animation-element appear" style={{ paddingLeft: '0px' }}>
@@ -149,10 +150,10 @@ const Services = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <div style={{ display: 'flex', padding: '100px' }}>
+            <button className="animation-element appear header-btn" style={{ zIndex: '2', position: 'relative', paddingLeft: '30px', paddingRight: '30px' }}>PLAY NOW  !</button>
+            <div style={{ display: 'flex', padding: '100px', paddingTop: '200px' }}>
                 {['game (14).webp', 'game (18).webp', 'game (23).webp', 'game (25).webp'].map((a, idx) => (
                     <div key={idx} style={{ width: '25%', padding: '10px' }}>
                         <GameCard img={a} key={idx} style={{ width: '25%' }} />

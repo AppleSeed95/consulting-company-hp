@@ -27,7 +27,7 @@ const GameCard = ({ title, img, description }) => {
                                 borderTopRightRadius: '20px',
                                 borderTopLeftRadius: '20px',
                                 transitionDuration: '500ms',
-                                filter: 'saturate(0)'
+                                filter: 'saturate(0)',
                             } :
                             {
                                 position: 'absolute',
